@@ -24,4 +24,4 @@ if 99999 < number < 1000000:
     else:
         print(F"{number} -> no")
 else:
-    print("На билете 6 цифр")
+    print("На билете должно быть 6 цифр")
