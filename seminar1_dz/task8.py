@@ -8,7 +8,7 @@ width = int(input("Введите ширину шоколадки: "))
 height = int(input("Введите высоту шоколадки: "))
 tiles = int(input("Введите желаемое колличество плиток шоколада: "))
 
-if tiles % width == 0 or tiles % height == 0:
+if (tiles % width == 0 or tiles % height == 0) and tiles < width + height:
     print(f"{width} {height} {tiles} -> yes")
 else:
     print(f"{width} {height} {tiles} -> no")
