@@ -18,9 +18,9 @@ print(f"Массив: {array_A}")
 
 find_number_x = int(input("Введите число x: "))
 near_x = 0
-minraz = pow(abs(find_number_x - array_A[0]), 2)
+minraz = (abs(find_number_x - array_A[0]))
 for i in range(0, len(array_A)):
-    if pow(abs(find_number_x - array_A[i]), 2) <= minraz:
-        minraz = pow(abs(find_number_x-array_A[i]), 2)
+    if (abs(find_number_x - array_A[i])) <= minraz:
+        minraz = (abs(find_number_x-array_A[i]))
         near_x = array_A[i]
 print(f"Самое ближайшее к числу х является {near_x}")
