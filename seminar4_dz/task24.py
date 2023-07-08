@@ -15,7 +15,9 @@
 # 9
 
 import random
-n = 4
+
+
+n = int(input("Введите длину списка: "))
 array = []
 for i in range(n):
     array.append(int(random.randint(1, 5))) 
@@ -25,7 +27,7 @@ array = array * 3
 result_max = array[0 - 1] + array[0] + array[0 + 1]
 result = 0
 for elem in array:
-    result = array[elem - 1] + array[elem] + array[elem + 1]
+    result = array[elem - 1] + array[elem] + array[(elem + 1) % len(array)]
     if result_max < result:
         result_max = result
 print(f"Максимальное колличество ягод, которое можно собрать за раз: {result_max}")
