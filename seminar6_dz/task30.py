@@ -5,3 +5,9 @@
 # Ввод: 7 2 5
 # Вывод: 7 9 11 13 15
 
+input_number = int(input("Задайте элемент прогрессии: "))
+input_step = int(input("Задайте шаг: "))
+input_length = int(input("Задайте границу массива: "))
+
+array = [input_number + i * input_step for i in range(input_length)]
+print(array)
