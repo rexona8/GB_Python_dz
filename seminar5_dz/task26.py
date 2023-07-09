@@ -8,7 +8,7 @@ def degree(num1, num2):
         return 1
     return num1 * degree(num1, num2 - 1)
 
-A = int(input("Введите число A: "))
-B = int(input("Введите число B: "))
+a = int(input("Введите число a: "))
+b = int(input("Введите число b: "))
 
-print(degree(A, B))
+print(degree(a, b))
